@@ -1,0 +1,66 @@
+CSS selectors allow you to target specific HTML elements and apply styling to them. There are several types of CSS selectors:
+
+1. **Element Selector:** Selects HTML elements based on their element type. For example, to select all `<p>` elements:
+   ```css
+   p {
+       /* CSS rules */
+   }
+   ```
+
+2. **Class Selector:** Selects elements based on their class attribute. You denote a class selector with a dot (`.`) followed by the class name. For example, to select all elements with the class "example":
+   ```css
+   .example {
+       /* CSS rules */
+   }
+   ```
+
+3. **ID Selector:** Selects a single element based on its unique ID attribute. You denote an ID selector with a hash (`#`) followed by the ID name. For example, to select an element with the ID "header":
+   ```css
+   #header {
+       /* CSS rules */
+   }
+   ```
+
+4. **Attribute Selector:** Selects elements based on their attribute values. For example, to select all elements with a "href" attribute:
+   ```css
+   [href] {
+       /* CSS rules */
+   }
+   ```
+
+5. **Descendant Selector:** Selects an element that is a descendant of another element. For example, to select all `<li>` elements that are descendants of an element with the class "menu":
+   ```css
+   .menu li {
+       /* CSS rules */
+   }
+   ```
+
+6. **Child Selector:** Selects an element that is a direct child of another element. For example, to select all `<li>` elements that are direct children of an element with the ID "main-menu":
+   ```css
+   #main-menu > li {
+       /* CSS rules */
+   }
+   ```
+
+7. **Adjacent Sibling Selector:** Selects an element that is directly preceded by another element. For example, to select all `<p>` elements that are directly preceded by an `<h2>` element:
+   ```css
+   h2 + p {
+       /* CSS rules */
+   }
+   ```
+
+8. **Pseudo-classes:** Selects elements based on their state or position. For example, `:hover`, `:active`, `:first-child`, etc.
+   ```css
+   a:hover {
+       /* CSS rules */
+   }
+   ```
+
+9. **Pseudo-elements:** Selects specific parts of an element. For example, `::before` and `::after` to insert content before and after an element's content.
+   ```css
+   p::first-line {
+       /* CSS rules */
+   }
+   ```
+
+These are the most commonly used CSS selectors. They provide powerful ways to target and style HTML elements based on various criteria.

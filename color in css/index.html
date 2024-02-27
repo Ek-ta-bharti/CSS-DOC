@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 255,0,0 ==> RED
+        0,255,0  ==>   GREEN
+        0,0,255   ==>  BLUE */
+        body{
+            /* background-color: rgb(255, 0, 255); */
+            background-color: hsl(0,0%,94%);
+        }
+        h1{
+            color: green;
+        }
+        #btn{
+            color: rgb(29, 27, 27);
+            /* 1: This is the alpha channel or opacity value specified in RGBA format. It ranges from 0 to 1, where 0 is fully transparent and 1 is fully opaque. Here, it's set to 1, indicating full opacity. */
+            background-color: rgb(255, 255, 255, 1);      
+        }
+        p{
+            color: currentColor;
+        }
+        #btn:hover{
+            color:rgb(255, 255, 255);
+            color: transparent;
+            background-color: black;
+        }
+        p::first-line {
+        color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>bharti</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero excepturi culpa magnam repellendus explicabo possimus iusto quae quisquam, error facere veritatis ab inventore dolor aut corrupti. Velit quasi ab quam perspiciatis fuga nam quas, fugit error, corrupti similique quod repellat, maxime vel itaque cumque culpa consectetur minima sed?</p>
+    <br>
+    <a href="#"  id="btn" target="_blank">Submit</a>
+
+</body>
+</html>

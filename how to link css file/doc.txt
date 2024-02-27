@@ -1,0 +1,27 @@
+CSS can be linked to an HTML document in several ways:
+
+1. **External CSS:** This is the most common method where you create a separate CSS file and link it to your HTML file using the `<link>` tag inside the `<head>` section of your HTML document.
+
+    ```html
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    ```
+
+2. **Internal CSS:** You can also include CSS directly within the `<style>` tags in the `<head>` section of your HTML document. This is useful for small, one-off styles that you don't want to create a separate file for.
+
+    ```html
+    <head>
+        <style>
+            /* CSS rules */
+        </style>
+    </head>
+    ```
+
+3. **Inline CSS:** Inline CSS is applied directly to an HTML element using the `style` attribute. This is useful for styling individual elements.
+
+    ```html
+    <h1 style="color: blue;">Heading</h1>
+    ```
+
+Each method has its use case, but generally, using an external CSS file is preferred for larger projects as it keeps your HTML code clean and separates the structure (HTML) from the presentation (CSS).

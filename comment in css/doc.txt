@@ -1,0 +1,16 @@
+In CSS, comments can be added using two methods:
+
+1. **Single-line Comments:** Single-line comments start with `//` and continue until the end of the line. These comments are similar to those used in many programming languages.
+   ```css
+   /* This is a valid CSS comment */
+   ```
+
+2. **Multi-line Comments:** Multi-line comments start with `/*` and end with `*/`. You can use these comments to write longer comments spanning multiple lines.
+   ```css
+   /*
+      This is a multi-line comment in CSS.
+      It can span multiple lines.
+   */
+   ```
+
+Comments in CSS are used to provide explanations, documentations, or to temporarily disable certain CSS rules without deleting them. They are ignored by the browser and do not affect the rendering of the webpage.

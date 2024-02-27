@@ -1,0 +1,33 @@
+In CSS, the `color` property is used to specify the color of text. The value of the `color` property can be specified using various formats such as named colors, hexadecimal, RGB, RGBA, HSL, and HSLA. Here are examples of each:
+
+1. **Named Colors:** You can use predefined color names such as `red`, `blue`, `green`, etc.
+   ```css
+   color: red;
+   ```
+
+2. **Hexadecimal Notation:** Hexadecimal notation represents colors using a combination of six characters (3 pairs of values representing Red, Green, and Blue intensities).
+   ```css
+   color: #FF0000; /* Red */
+   ```
+
+3. **RGB Notation:** RGB (Red, Green, Blue) values specify the intensity of the color components separately.
+   ```css
+   color: rgb(255, 0, 0); /* Red */
+   ```
+
+4. **RGBA Notation:** RGBA is similar to RGB but includes an alpha channel (transparency) as the fourth parameter.
+   ```css
+   color: rgba(255, 0, 0, 0.5); /* Semi-transparent Red */
+   ```
+
+5. **HSL Notation:** HSL (Hue, Saturation, Lightness) notation represents colors based on their hue, saturation, and lightness.
+   ```css
+   color: hsl(0, 100%, 50%); /* Red */
+   ```
+
+6. **HSLA Notation:** HSLA is similar to HSL but includes an alpha channel (transparency) as the fourth parameter.
+   ```css
+   color: hsla(0, 100%, 50%, 0.5); /* Semi-transparent Red */
+   ```
+
+You can use any of these formats to specify colors in CSS, depending on your preference and requirements.
