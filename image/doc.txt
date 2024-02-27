@@ -1,0 +1,23 @@
+In CSS, you can set a background image for an element using the `background-image` property. Here's the basic syntax:
+
+```css
+selector {
+    background-image: url('path/to/image.jpg');
+}
+```
+
+Replace `selector` with the appropriate CSS selector for the element you want to apply the background image to, and `'path/to/image.jpg'` with the actual path to your image file.
+
+Here's a more detailed example:
+
+```css
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat; /* Optional: prevents the image from repeating */
+    background-size: cover; /* Optional: ensures the image covers the entire element */
+}
+```
+
+In this example, the background image 'background.jpg' will be applied to the `body` element, and it won't repeat. The `background-size: cover;` property ensures that the image covers the entire background area of the `body` element, cropping if necessary to maintain its aspect ratio.
+
+You can also use other values for `background-size` such as `contain`, `auto`, or specific dimensions like `100px`, `50%`, etc., depending on your requirements.

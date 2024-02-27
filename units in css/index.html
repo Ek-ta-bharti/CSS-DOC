@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 54px;
+            color: brown;
+        }
+        p{
+            font-size: 36px;
+        }
+        li{
+            font-size: 44px;
+        }
+
+        /* 100 % 16 = 6.25 */
+        /* 54 x 6.25 = 337.5 */
+        h1{
+            font-size: 3.375%;
+            color: brown;
+        }
+        p{
+            font-size: 255%;
+        }
+        li{
+            font-size: 275%;
+        }
+
+        /* 1em = 16px */
+        /* 54%16=3.375 */
+        h1{
+            font-size: 3.375em;
+            color: brown;
+        }
+        p{
+            font-size: 2.25em;
+        }
+        /* its depend upon parent class */
+        .parent{
+            font-size: 10px;
+        }
+        /* 1em= 10px */
+        li{
+            font-size: 2.75em;
+        }
+
+        /* 1rem = 10px */
+        /* 16px = 100%    =100 % 16 = 6.25
+        1px = 6.25%          6.25 x 10 = 62.5
+        10px = 62.5% */
+
+        /* its change all elent size .......it usrd for responsive website */
+        html{
+            font-size: 62.5%;
+        }
+        h1{
+            font-size: 62.5rem;
+            color: brown;
+        }
+        p{
+            font-size: 3.6rem;
+        }
+
+        /* its does not depend upon parent class */
+        .parent{
+            font-size: 20px;
+        }
+        li{
+            font-size: 4.4rem;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> project second</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quos ratione error accusamus? Eveniet accusantium nisi molestiae ullam porro odio, repudiandae dolore eius blanditiis, excepturi beatae qui distinctio! Aspernatur, aliquid.</p>
+
+    <div class="parent">
+        <ul>
+            <li>1st text</li>
+            <li>2nd text</li>
+            <li>3rd text</li>
+            <li>4th text</li>
+        </ul>
+    </div>
+</body>
+</html>

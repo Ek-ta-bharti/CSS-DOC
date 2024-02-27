@@ -1,0 +1,85 @@
+In CSS, you can specify the font family, size, weight, style, and other properties to control the appearance of text on your web pages. Here's how you can work with fonts in CSS:
+
+### 1. Font Family:
+
+You can specify a font family for text using the `font-family` property. This property can take either a specific font name or a list of font names as its value. If the first font is not available, the browser will try the next one in the list.
+
+Example:
+```css
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+```
+
+### 2. Font Size:
+
+You can set the font size using the `font-size` property. You can use various units such as pixels (px), em, rem, percentages (%), etc.
+
+Example:
+```css
+h1 {
+    font-size: 24px;
+}
+```
+
+### 3. Font Weight:
+
+You can specify the weight (thickness) of the font using the `font-weight` property. Common values include `normal`, `bold`, `bolder`, `lighter`, or a numerical value ranging from 100 to 900.
+
+Example:
+```css
+p {
+    font-weight: bold;
+}
+```
+
+### 4. Font Style:
+
+You can specify the style of the font using the `font-style` property. Common values include `normal`, `italic`, and `oblique`.
+
+Example:
+```css
+em {
+    font-style: italic;
+}
+```
+
+### 5. Font Variant:
+
+The `font-variant` property allows you to control the use of small-caps glyphs for lowercase characters.
+
+Example:
+```css
+p {
+    font-variant: small-caps;
+}
+```
+
+### 6. Line Height:
+
+You can control the spacing between lines of text using the `line-height` property. You can specify it as a unitless value, percentage, or length.
+
+Example:
+```css
+p {
+    line-height: 1.5;
+}
+```
+
+### 7. Google Fonts:
+
+You can also use Google Fonts to import and use custom fonts in your web pages. You need to include a `<link>` tag in the HTML `<head>` section to import the font, and then specify the font family in your CSS.
+
+Example:
+```html
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+```
+
+These are some of the basic properties and techniques for working with fonts in CSS. By combining these properties, you can achieve various styles and designs for text on your web pages.
