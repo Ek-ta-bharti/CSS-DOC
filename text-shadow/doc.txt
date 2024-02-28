@@ -1,0 +1,28 @@
+In CSS, the `text-shadow` property is used to add shadows to text. It allows you to create effects like adding depth or making the text stand out more by creating a shadow behind it. The `text-shadow` property takes a comma-separated list of shadows to apply to the text.
+
+Each shadow in the list is specified by three or four values:
+
+1. Horizontal offset: The distance the shadow is offset horizontally from the text. Positive values move the shadow to the right, while negative values move it to the left.
+2. Vertical offset: The distance the shadow is offset vertically from the text. Positive values move the shadow down, while negative values move it up.
+3. Blur radius (optional): The amount of blur applied to the shadow. Higher values create a more diffused, softer shadow. If not specified, the shadow is sharp.
+4. Shadow color: The color of the shadow. This can be specified using color names, hexadecimal notation, RGB, RGBA, HSL, HSLA, or other color formats.
+
+Here's an example of how you might use `text-shadow` in CSS:
+
+```css
+/* Add a simple black shadow behind text */
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Add multiple shadows with different offsets and colors */
+h2 {
+    text-shadow: 1px 1px 1px #000, 
+                 2px 2px 1px #777, 
+                 3px 3px 1px #aaa;
+}
+```
+
+In the first example, the `h1` element will have a black shadow that is 2 pixels to the right and 2 pixels down from the text, with a blur radius of 4 pixels.
+
+In the second example, the `h2` element will have multiple shadows: a 1-pixel offset shadow in black, a 2-pixel offset shadow in a darker gray, and a 3-pixel offset shadow in a lighter gray. Each shadow has a blur radius of 1 pixel.

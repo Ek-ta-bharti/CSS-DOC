@@ -1,0 +1,176 @@
+In CSS, you can control various properties of text to achieve the desired appearance. Here are some of the most commonly used text properties:
+
+### 1. Font Properties:
+- **font-family**: Specifies the font family for text.
+  ```css
+  body {
+      font-family: Arial, sans-serif;
+  }
+  ```
+- **font-size**: Sets the size of the font.
+  ```css
+  h1 {
+      font-size: 24px;
+  }
+  ```
+- **font-weight**: Specifies the thickness of the font.
+  ```css
+  p {
+      font-weight: bold;
+  }
+  ```
+- **font-style**: Sets the style of the font (normal, italic, or oblique).
+  ```css
+  em {
+      font-style: italic;
+  }
+  ```
+
+### 2. Text Color:
+- **color**: Sets the color of the text.
+  ```css
+  p {
+      color: #333; /* Hexadecimal color value */
+  }
+  ```
+
+### 3. Text Decoration:
+- **text-decoration**: Sets decorations such as underline, overline, line-through, or none.
+  ```css
+  a {
+      text-decoration: none;
+  }
+  ```
+
+### 4. Text Alignment:
+- **text-align**: Aligns the text within its container (left, right, center, justify).
+  ```css
+  .center {
+      text-align: center;
+  }
+  ```
+
+### 5. Text Transformation:
+- **text-transform**: Controls the capitalization of text (uppercase, lowercase, capitalize).
+  ```css
+  .uppercase {
+      text-transform: uppercase;
+  }
+  ```
+
+### 6. Line Height:
+- **line-height**: Sets the height of a line of text.
+  ```css
+  p {
+      line-height: 1.5; /* 1.5 times the font size */
+  }
+  ```
+
+### 7. Letter Spacing:
+- **letter-spacing**: Adjusts the space between characters.
+  ```css
+  h2 {
+      letter-spacing: 2px;
+  }
+  ```
+
+### 8. Word Spacing:
+- **word-spacing**: Adjusts the space between words.
+  ```css
+  p {
+      word-spacing: 3px;
+  }
+  ```
+
+### 9. Text Shadow:
+- **text-shadow**: Adds a shadow effect to the text.
+  ```css
+  h1 {
+      text-shadow: 2px 2px 4px #000;
+  }
+  ```
+
+These are some of the commonly used text properties in CSS. By using these properties, you can control the appearance, style, and layout of text on your web pages.
+
+
+
+==================================================
+
+
+In CSS, the `text-align` property is used to specify the horizontal alignment of text content within an element. It can be applied to block-level and inline-level elements. The possible values for `text-align` are:
+
+1. `left`: Text is aligned to the left edge of the containing element.
+2. `right`: Text is aligned to the right edge of the containing element.
+3. `center`: Text is centered horizontally within the containing element.
+4. `justify`: Text is justified. This means that spaces are adjusted so that the text lines up along both the left and right edges of the containing element, except for the last line.
+5. `initial`: Sets the property to its default value.
+6. `inherit`: Inherits the value of the property from its parent element.
+
+Here's an example of how you might use `text-align` in CSS:
+
+```css
+/* Align paragraph text to the center */
+p {
+    text-align: center;
+}
+
+/* Align headings to the left */
+h1, h2, h3 {
+    text-align: left;
+}
+
+/* Align a specific div to the right */
+.special-div {
+    text-align: right;
+}
+```
+
+In this example, paragraphs (`<p>` elements) will have their text centered, headings (`<h1>`, `<h2>`, `<h3>`) will have their text aligned to the left, and any element with the class `special-div` will have its text aligned to the right.
+
+
+
+
+
+
+
+
+
+
+
+
+=================================
+In CSS, the `text-decoration` property is used to specify decorations added to text. It can be used to control things like underlines, overlines, line-throughs, and blinking text. The common values for `text-decoration` are:
+
+1. `none`: No decoration is applied to the text.
+2. `underline`: Adds a line beneath the text.
+3. `overline`: Adds a line above the text.
+4. `line-through`: Adds a line through the middle of the text.
+5. `blink`: Makes the text blink on and off.
+
+Additionally, multiple values can be used together separated by spaces. For example, `text-decoration: underline line-through` would underline the text and strike a line through it.
+
+Here's an example of how you might use `text-decoration` in CSS:
+
+```css
+/* Add underline to all links */
+a {
+    text-decoration: underline;
+}
+
+/* Remove underline from links when hovered */
+a:hover {
+    text-decoration: none;
+}
+
+/* Add a line through deleted content */
+.deleted {
+    text-decoration: line-through;
+}
+
+/* Make blinking text */
+.blinking {
+    text-decoration: underline blink;
+}
+```
+
+In this example, all anchor (`<a>`) elements will have an underline added to them. When hovered over, the underline will be removed. Elements with the class `deleted` will have a line through them. And elements with the class `blinking` will have both an underline and blinking effect applied to them.
