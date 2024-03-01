@@ -1,0 +1,94 @@
+In CSS (Cascading Style Sheets), you can style lists using various properties to control their appearance. Here's how you can style lists in CSS:
+
+### 1. List Style Type:
+This property specifies the type of marker or bullet for the list items. Some common values include:
+```css
+ul {
+  list-style-type: disc; /* filled circle */
+}
+
+ol {
+  list-style-type: decimal; /* decimal numbers */
+}
+
+ul.square {
+  list-style-type: square; /* filled square */
+}
+
+ul.circle {
+  list-style-type: circle; /* empty circle */
+}
+
+ul.none {
+  list-style-type: none; /* no marker */
+}
+```
+
+### 2. List Style Position:
+This property controls the position of the marker relative to the list item's content. Values can be `inside` or `outside`.
+```css
+ul {
+  list-style-position: outside; /* markers outside the content */
+}
+
+ol {
+  list-style-position: inside; /* markers inside the content */
+}
+```
+
+### 3. List Style Image:
+This property allows you to use a custom image as the list item marker.
+```css
+ul {
+  list-style-image: url('marker.png'); /* custom marker image */
+}
+```
+
+### 4. List Style:
+This property is a shorthand for setting list style type, list style image, and list style position.
+```css
+ul {
+  list-style: square url('marker.png') inside; /* shorthand */
+}
+```
+
+### Example:
+```css
+/* Styling an unordered list */
+ul {
+  list-style-type: disc;
+}
+
+/* Styling an ordered list */
+ol {
+  list-style-type: decimal;
+}
+
+/* Styling a specific class of unordered list */
+ul.special {
+  list-style: square inside;
+}
+```
+
+### HTML Usage:
+```html
+<ul>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ul>
+
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+
+<ul class="special">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ul>
+```
+
+These CSS properties provide flexibility in styling lists according to your design requirements.

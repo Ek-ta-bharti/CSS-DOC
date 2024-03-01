@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop shadow</title>
+    <style>
+        body{
+            width:100%;
+            height: 100vh;
+            background-color: hsl(0,0%,94%);
+            background-color: black;
+            display: grid;
+            place-items: center;
+        }
+        img{
+            /* box-shadow: 0 0 0 40px red; */
+            filter: drop-shadow(40px 30px 20px  red);
+            height: 1500px;
+            width: 1300px;
+            /* filter: grayscale(); */
+            /* filter: contrast(); */
+            /* filter: opacity(0.4); */
+            /* filter: blur(50px); */
+               /* bydefault 100% brightness */
+            /* filter: brightness(150%); */
+            /* filter: saturate(2);
+            filter: invert(); */
+            /* filter: contrast(150%); */
+
+            filter: blur(1px) grayscale(0.1) contrast(1.7);
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <img src="../drop shadow in css/ekta-removebg-preview.png" alt="photo"/>
+    </section>
+</body>
+</html>
