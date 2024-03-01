@@ -1,0 +1,55 @@
+`z-index` in CSS is a property that specifies the stack order of positioned elements. Positioned elements are those with a `position` value other than `static`, which is the default.
+
+Here's how it works:
+
+- Elements with a higher `z-index` value are stacked above elements with lower `z-index` values.
+- If two elements have the same `z-index`, the one that comes later in the HTML source order will be stacked above the other.
+
+Here's a basic example:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Z-Index Example</title>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+    #box1 {
+        background-color: red;
+        z-index: 2;
+    }
+    #box2 {
+        background-color: blue;
+        left: 50px;
+        top: 50px;
+        z-index: 1;
+    }
+    #box3 {
+        background-color: green;
+        left: 100px;
+        top: 100px;
+        z-index: 3;
+    }
+</style>
+</head>
+<body>
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+    <div id="box3" class="box"></div>
+</body>
+</html>
+```
+
+In this example:
+
+- `box1` has a `z-index` of 2 and will be stacked above `box2`.
+- `box2` has a `z-index` of 1 and will be stacked below `box1`.
+- `box3` has a `z-index` of 3 and will be stacked above both `box1` and `box2`.
+
+It's important to note that `z-index` only applies to elements with a specified `position` property (`relative`, `absolute`, or `fixed`). Elements with a `static` position will always be below any positioned elements, regardless of the `z-index`.
