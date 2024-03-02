@@ -1,0 +1,64 @@
+In CSS, animations allow you to create more complex and customized motion effects compared to simple transitions. Animations in CSS involve defining keyframes that specify the style changes at various points during the animation's duration. Here's how animations work in CSS:
+
+1. **Defining Keyframes**:
+
+    Keyframes define the style changes that occur at various points during the animation. Each keyframe represents a specific percentage of the animation's total duration (from 0% to 100%). You can define multiple keyframes to create complex animations.
+
+    ```css
+    @keyframes animation-name {
+        0% {
+            /* styles at the start of the animation */
+        }
+        50% {
+            /* styles halfway through the animation */
+        }
+        100% {
+            /* styles at the end of the animation */
+        }
+    }
+    ```
+
+2. **Applying Animations**:
+
+    Once you've defined your keyframes, you can apply them to elements using the `animation` property. This property allows you to specify the animation's name, duration, timing function, delay, and other properties.
+
+    ```css
+    .element {
+        animation: animation-name 3s ease-in-out 1s infinite alternate;
+    }
+    ```
+
+    - `animation-name`: Specifies the name of the keyframes you defined.
+    - `duration`: Specifies how long the animation should take to complete (in seconds or milliseconds).
+    - `timing-function`: Specifies the speed curve of the animation.
+    - `delay`: Specifies a delay before the animation starts.
+    - `iteration-count`: Specifies the number of times the animation should repeat (`infinite` for indefinitely).
+    - `direction`: Specifies whether the animation should play forward (`normal`), backward (`reverse`), alternate between forward and backward (`alternate`), or alternate between backward and forward (`alternate-reverse`).
+
+3. **Example**:
+
+    ```css
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .element {
+        animation: bounce 1s ease-in-out infinite;
+    }
+    ```
+
+    In this example, the `.element` will bounce up and down continuously, as specified by the `bounce` keyframes.
+
+4. **Browser Compatibility**:
+
+    It's important to note that while CSS animations are widely supported, there may be slight variations in behavior across different browsers. Always test your animations in multiple browsers to ensure compatibility.
+
+CSS animations provide a powerful way to create dynamic and engaging user interfaces without relying on JavaScript. They're especially useful for creating effects such as loading spinners, attention-grabbing hover effects, and more complex animations like sliding panels or fading elements in and out.
