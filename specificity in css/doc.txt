@@ -1,0 +1,59 @@
+Specificity in CSS refers to the rules that determine which styles are applied to an element when multiple conflicting styles are defined. Understanding specificity is crucial for managing and troubleshooting styles in web development. Specificity is calculated based on various components within CSS selectors, and it determines the precedence of styles.
+
+Here's how specificity is calculated:
+
+1. **Inline Styles**: Inline styles have the highest specificity. If a style is applied directly to an element using the `style` attribute, it will override any other styles, regardless of their specificity.
+
+   ```html
+   <div style="color: red;">This text will be red</div>
+   ```
+
+2. **ID Selectors**: ID selectors have a high specificity. An ID selector is denoted by a hash (#) followed by the ID name.
+
+   ```css
+   #unique-id {
+       color: blue;
+   }
+   ```
+
+3. **Class Selectors, Attribute Selectors, and Pseudo-classes**: These selectors have a medium level of specificity. They are denoted by a period (.) for classes, square brackets ([]) for attributes, and a colon (:) for pseudo-classes.
+
+   ```css
+   .my-class {
+       color: green;
+   }
+   ```
+
+4. **Element Selectors and Pseudo-elements**: These selectors have the lowest specificity. They target HTML elements directly and are denoted by the element name.
+
+   ```css
+   p {
+       font-size: 16px;
+   }
+   ```
+
+When multiple conflicting styles are applied to the same element, CSS resolves the conflict by considering the specificity of the selectors. The style with the highest specificity will be applied. If two styles have the same specificity, the one that appears last in the CSS document or in the HTML (for inline styles) will take precedence. 
+
+For example, given the following CSS:
+
+```css
+p {
+    color: blue;
+}
+
+#unique-id {
+    color: red;
+}
+```
+
+And the following HTML:
+
+```html
+<div id="unique-id">
+    <p>This text will be red</p>
+</div>
+```
+
+The text inside the paragraph will be red because the specificity of the ID selector (`#unique-id`) is higher than that of the element selector (`p`).
+
+Understanding specificity is crucial for writing maintainable CSS and troubleshooting styling issues. It helps ensure that styles are applied as intended and avoid unintended overrides.

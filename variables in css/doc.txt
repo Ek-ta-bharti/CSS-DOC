@@ -1,0 +1,59 @@
+Variables in CSS, also known as CSS custom properties, allow you to define reusable values that can be referenced and reused throughout your stylesheet. This feature provides flexibility and maintainability to your stylesheets, as you can easily update values in one place and have them reflected across multiple elements.
+
+Here's how you can use variables in CSS:
+
+1. **Defining Variables**: You define variables using the `--` prefix followed by the variable name and its value within a selector block.
+
+    ```css
+    :root {
+        --primary-color: #007bff;
+        --secondary-color: #6c757d;
+    }
+    ```
+
+    Here, `:root` selects the root element of the document (typically `<html>`), making the variables globally available throughout the stylesheet.
+
+2. **Using Variables**: To use a variable, you reference it using the `var()` function, passing the variable name as an argument.
+
+    ```css
+    .element {
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+    }
+    ```
+
+    This assigns the color `#007bff` to the text color and `#6c757d` to the background color of the element.
+
+3. **Fallback Values**: You can provide fallback values for browsers that do not support CSS variables by providing a second argument to the `var()` function.
+
+    ```css
+    .element {
+        color: var(--primary-color, blue);
+    }
+    ```
+
+    If `--primary-color` is not defined, the text color will default to `blue`.
+
+4. **Modifying Variables with JavaScript**: You can modify CSS variables dynamically using JavaScript, allowing for interactive changes to styles.
+
+    ```javascript
+    document.documentElement.style.setProperty('--primary-color', 'red');
+    ```
+
+    This JavaScript code changes the value of `--primary-color` to `red`.
+
+5. **Scoped Variables**: You can define variables within a specific selector scope. This restricts their usage to that scope only.
+
+    ```css
+    .container {
+        --bg-color: #f0f0f0;
+    }
+
+    .element {
+        background-color: var(--bg-color);
+    }
+    ```
+
+    Here, `--bg-color` is scoped to `.container`, and it can only be used within that selector or its descendants.
+
+CSS variables provide a powerful way to manage and reuse values in your stylesheets, improving readability, scalability, and maintainability.
