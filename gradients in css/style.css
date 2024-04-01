@@ -1,0 +1,64 @@
+body{
+
+    /* background-image: repeating-linear-gradient(
+  45deg,
+  #d2e0fb,
+  #79ac78 
+  45px
+    ); */
+/* /* 
+background-image: linear-gradient(
+     red, yellow */
+  /* to right,   red, yellow 
+  /* to left,   red, yellow 
+  /* to top, red, yellow 
+  /* 90deg, red, yellow 
+  /* 270deg, red, yellow 
+/* to bottom right, red, yellow
+
+to top left, red, rgb(29, 234, 60)
+
+); 
+*/
+/* background-image: linear-gradient(
+    to right top ,
+    rgba(5, 25, 55, 0.6),
+    rgba(0, 77, 122, 0.6),
+    rgba(0, 135, 147, 0.6),
+    rgba(0, 191, 114, 0.6),
+    rgba(168, 235, 18, 0.6)
+),
+
+url('https://wowslider.com/sliders/demo-47/data1/images/nightsky523892.jpg');
+background-repeat: no-repeat;
+/* background-size: 100% 100%; */
+/* background-size: cover; */ 
+
+/* background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+);
+*/
+
+
+/* ======  radial-gradient============= */
+
+/* background-image: radial-gradient( red, yellow,green); */
+/* background-image: radial-gradient(ellipse, red, yellow,green); */
+/* background-image: radial-gradient(circle, red, yellow  40%, green 40% ); */
+/* background-image: repeating-radial-gradient( red, yellow  40%, green 50px ); */
+/* background-image: repeating-radial-gradient( red, yellow  40%, green 500px ); */
+
+background-image: radial-gradient(
+    circle at center ,
+    rgba(5, 25, 55, 0.6),
+    rgba(0, 77, 122, 0.6),
+    rgba(0, 135, 147, 0.6),
+    rgba(0, 191, 114, 0.6),
+    rgba(168, 235, 18, 0.6)
+); 
+  }
